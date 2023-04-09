@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"path": "../../laptrinh/JS"
+		},
+		{
+			"path": "../../laptrinh/nhacband"
+		},
+		{
+			"path": "../../Ki2nam3/web/Web/project_web"
+		},
+		{
+			"path": "../../KhoaHocVoiMisa2022"
+		},
+		{
+			"path": "../../json_sever"
+		},
+		{
+			"path": "../../ViettelIDC/Vue_JS"
+		},
+		{
+			"path": "../../Vue js/CoPilot-master"
+		},
+		{
+			"path": "C:/Users/MSII/OneDrive/Tài liệu/php"
+		},
+		{
+			"path": "../../ViettelIDC/bootstrap"
+		},
+		{
+			"path": "../../ViettelIDC/NextCloud"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JS",
+		"makefile.extensionOutputFolder": "./.vscode"
+	}
+}
