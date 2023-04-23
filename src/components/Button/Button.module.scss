@@ -7,6 +7,7 @@
     border-radius: 4px;
     font-size: 1.6rem;
     font-weight: 700;
+    font-family: var(--font-family);
     text-align: center;
     cursor: pointer;
     border: 1px solid transparent;
@@ -25,6 +26,11 @@
 .icon + .title, .title + .icon {
     margin-left: 8px;
 } 
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
 // Button types:
 .rounded {
     border-radius: 999px;

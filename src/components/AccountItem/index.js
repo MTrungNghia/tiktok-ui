@@ -1,23 +1,31 @@
+import PropTypes from 'prop-types';
 import classNames from "classnames/bind";
-import styles from "./AccopuntItem.module.scss"
+import styles from "./AccopuntItem.module.scss";
+import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "~/components/Image";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const cx = classNames.bind(styles)
 
-function AccopuntItem() {
+function AccopuntItem({data}) {
     return ( 
-        <div className={cx('wrapper')}>
-            <img className={cx('avatar')} src ="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/a43eb1dff53e2df52b1615220ae5c5ac~c5_100x100.jpeg?x-expires=1681099200&x-signature=AApHw6kzKa30PjryRfzbQ0leUA8%3D" alt="Hoaa" />
+        <Link to={`/@${data.nickname}`} className={cx('wrapper')}>
+            <Image className={cx('avatar')} src ={data.avatar} alt="Hoaa" />
             <div className={cx('info')}>
                 <p className={cx('name')}>
-                    <span>Nguyen van A</span>
-                    <FontAwesomeIcon className={cx('check')} icon={faCheckCircle}/>
+                    <span>{data.full_name}</span>
+                    {data.tick && <FontAwesomeIcon className={cx('check')} icon={faCheckCircle}/>}
+                    
                 </p>
-                <span className={cx('username')}>nguyenvana</span>
+                <span className={cx('username')}>{data.nickname}</span>
             </div>
-        </div>
+        </Link>
      );
+}
+
+AccopuntItem.propTypes = {
+    data: PropTypes.object.isRequired, 
 }
 
 export default AccopuntItem;
